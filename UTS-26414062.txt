@@ -1,0 +1,37 @@
+--No1--
+
+wget http://api.worldbank.org/v2/en/indicator/SI.POV.GINI?downloadformat=csv -O temp.zip; unzip temp.zip; rm temp.zip; cat API_SI.POV.GINI_DS2_en_csv_v2.csv > file.txt; sed 's/""/"0"/g' file.txt > file2.txt; column -s, -t < file2.txt > file3.txt; sed 's/"//g' file3.txt > file4.txt; cat file4.txt
+
+--No2--
+
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=01&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl1.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=02&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl2.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=03&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl3.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=04&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl4.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=05&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl5.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=06&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl6.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=07&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl7.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=08&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl8.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=09&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl9.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=10&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl10.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=11&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl11.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=12&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl12.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=13&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl13.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=14&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl14.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=15&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl15.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=16&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl16.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=17&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl17.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=18&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl18.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=19&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl19.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=20&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl20.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=21&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl21.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=22&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl22.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=23&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl23.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=24&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl24.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=25&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl25.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=26&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl26.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=27&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl27.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=28&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl28.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=29&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl29.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=30&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl30.txt;
+curl -k --data 'selprop=35&selrepo=lhk03prov&seltgl=31&selbul=10&seltah=16' https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp > tgl31.txt;
